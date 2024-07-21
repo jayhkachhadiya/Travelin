@@ -1,0 +1,131 @@
+
+/* ========================================= */
+/*          Error Page CSS        */
+/* ======================================== */
+.error {
+    background: #fff;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .error .error-content {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .error .error-content i {
+    color: #029e9d;
+  }
+  
+  .error .error-content h1 {
+    font-size: 252px;
+    margin: 0px;
+    color: #fff;
+    line-height: 1;
+  }
+  
+  .error .error-content h1 span {
+    text-shadow: -8px 0px 0px #fff;
+    color: #029e9d;
+  }
+  
+  .error .newsletter-form {
+    position: relative;
+  }
+  
+  .error .newsletter-form form {
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .error .newsletter-form form input {
+    padding-right: 65px;
+    height: 50px;
+    outline: none;
+  }
+  
+  .error .newsletter-form form input.nir-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    text-align: center;
+    border-radius: 0;
+    padding: 14px 20px 12px;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .error .newsletter-form form input.nir-btn:hover {
+    background: #029e9d !important;
+    transition: all ease-in-out 0.5s;
+    color: #fff;
+  }
+  
+  .error.error1:before {
+    content: '';
+    /* background: url(../images/trending-bg.jpg) no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  
+  @media (max-width: 991px) {
+    .error .error-content {
+      width: 100%;
+    }
+  
+    .reservation-main {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+  
+  @media (max-width: 811px) {
+    .error {
+      padding: 5rem 0 3rem !important;
+    }
+  
+    .error .error-content {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 567px) {
+    .error .error-content h1 {
+      font-size: 140px;
+      letter-spacing: -20px;
+    }
+  
+    .error .error-content .nir-btn {
+      margin: 0 0 1rem;
+    }
+  
+    .error .newsletter-form {
+      width: 100% !important;
+    }
+  
+    .error .newsletter-form form {
+      border-radius: 0px;
+    }
+  
+    .error .newsletter-form form input[type="email"] {
+      padding-right: 20px;
+    }
+  
+    .login-register .log-main {
+      width: 100% !important;
+    }
+  
+    .login-register .log-main button {
+      width: 100% !important;
+      margin: 0 0 10px !important;
+    }
+  }
+  

@@ -1,0 +1,16 @@
+.form-gap {
+    padding-top: 70px;
+}
+
+.panel {
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px double ;
+    width: 350px;
+    padding: 20px;
+}
+
+.InFi {
+    max-width: 300px;
+    margin: auto;
+}

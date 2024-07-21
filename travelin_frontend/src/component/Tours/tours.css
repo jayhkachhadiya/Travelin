@@ -1,0 +1,550 @@
+/* ========================================= */
+/*          Trending  CSS        */
+/* ======================================== */
+.trending {
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.trending .trend-item,
+.trending .trend-item1,
+.trending .trend-item2 {
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
+}
+
+.trending .trend-item::before,
+.trending .trend-item1::before,
+.trending .trend-item2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    bottom: 0;
+    background: #029e9d;
+    height: 4px;
+    transition: all ease-in-out 0.5s;
+    z-index: 2;
+}
+
+.trending .trend-item .trend-meta,
+.trending .trend-item1 .trend-meta,
+.trending .trend-item2 .trend-meta {
+    position: absolute;
+    top: -28px;
+    right: 20px;
+}
+
+.trending .trend-item .trend-image,
+.trending .trend-item1 .trend-image,
+.trending .trend-item2 .trend-image {
+    position: relative;
+}
+
+.trending .trend-item .trend-image img,
+.trending .trend-item1 .trend-image img,
+.trending .trend-item2 .trend-image img {
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+}
+
+.trending .trend-item .trend-image .trend-content,
+.trending .trend-item1 .trend-image .trend-content,
+.trending .trend-item2 .trend-image .trend-content {
+    z-index: 1;
+}
+
+.trending .trend-item .trend-image,
+.trending .trend-item .trend-image1,
+.trending .trend-item1 .trend-image,
+.trending .trend-item1 .trend-image1,
+.trending .trend-item2 .trend-image,
+.trending .trend-item2 .trend-image1 {
+    transition: all ease-in-out 0.5s;
+    overflow: hidden;
+}
+
+.trending .trend-item .trend-content1,
+.trending .trend-item1 .trend-content1,
+.trending .trend-item2 .trend-content1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.trending .trend-item:hover,
+.trending .trend-item1:hover,
+.trending .trend-item2:hover {
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-item:hover::before,
+.trending .trend-item1:hover::before,
+.trending .trend-item2:hover::before {
+    transition: all ease-in-out 0.5s;
+    width: 100%;
+}
+
+.trending .trend-item:hover .trend-image img,
+.trending .trend-item1:hover .trend-image img,
+.trending .trend-item2:hover .trend-image img {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-item:hover .color-overlay,
+.trending .trend-item1:hover .color-overlay,
+.trending .trend-item2:hover .color-overlay {
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-item:hover .color-overlay,
+.trending .trend-item1:hover .color-overlay,
+.trending .trend-item2:hover .color-overlay {
+    height: 100%;
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-item1::before {
+    display: none;
+}
+
+.trending .trend-item2 {
+    position: relative;
+    transition: all ease-in-out 0.5s;
+    height: 100%;
+    overflow: hidden;
+}
+
+.trending .trend-item2>a {
+    background-size: cover;
+    /* min-height: 356px; */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    display: inline-block;
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-item2::before {
+    display: none;
+}
+
+.trending .trend-image1 {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+
+.trending .trend-image1>a {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    display: inline-block;
+    transition: all ease-in-out 0.5s;
+}
+
+.section-shape {
+    position: absolute;
+    top: -96px;
+    left: 0;
+    width: 100%;
+    height: 96px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    z-index: 1;
+}
+
+.section-shape.section-shape1 {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 991px) {
+    .section-shape {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 767px) {
+    .trending .trend-item .trend-image1 {
+        height: 340px;
+        margin-bottom: 1rem;
+    }
+
+    .trending .trend-item2 {
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .trend-packages .trend-full .col-lg-5 {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .trending .trend-item .trend-image .trend-meta {
+        position: relative;
+        display: block !important;
+        text-align: center;
+    }
+
+    .trending .trend-item .trend-image .trend-meta .entry-author {
+        margin-bottom: 15px;
+    }
+}
+
+.entry-author img {
+    width: 36px !important;
+    height: 36px !important;
+    display: inline-block !important;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.sidebar-sticky .list-sidebar {
+    border-radius: 0px;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item {
+    padding: 0 0px 30px;
+    border-bottom: 2px dashed #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item h3 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 20%;
+    height: 2px;
+    background: #029e9d;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item h4 {
+    border: none;
+    padding: 0;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty .state label {
+    text-indent: 1em;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty .state label span.number {
+    float: right;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty:last-child {
+    margin: 0;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty.p-icon .state .icon {
+    color: #fff;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .pretty.p-icon input:checked~.state .icon {
+    background: #029e9d;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .range-slider {
+    margin-bottom: 0;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .range-slider .ui-slider .ui-slider-range {
+    background: #029e9d;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .star-rating span {
+    color: #ffbc00;
+    display: inline;
+}
+
+.sidebar-sticky .list-sidebar .sidebar-item .map-box {
+    /* background: url(../images/map.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sidebar-sticky .form-content {
+    box-shadow: 0px 0px 30px #cccccc57;
+    background: #029e9d;
+    padding: 30px;
+}
+
+.sidebar-sticky .form-content h4::before {
+    display: none !important;
+}
+
+.sidebar-sticky .form-content .nice-select {
+    padding: 13px 20px 10px 35px;
+    font-weight: 400;
+}
+
+.sidebar-sticky .form-content .input-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.sidebar-sticky .form-content .input-box input {
+    padding-left: 35px;
+}
+
+.sidebar-sticky .form-content .input-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.sidebar-sticky .form-content .input-box [class^="fa-"]:before {
+    color: #ef2853;
+    font-weight: 600;
+}
+
+.sidebar-sticky.sticky1 {
+    top: 120px;
+}
+
+.sidebar-sticky.sticky1.tab-sticky {
+    top: 30px;
+    box-shadow: none;
+}
+
+.tabs-navbar {
+    border: 1px solid #f1f1f1;
+}
+
+.tabs-navbar ul li {
+    display: block;
+    width: 100%;
+}
+
+.tabs-navbar ul li a {
+    padding: 15px;
+    transition: all ease-in-out 0.5s;
+    display: block;
+    background: #ffffff00;
+    width: 100%;
+}
+
+.tabs-navbar ul li a:hover {
+    color: #fff;
+    background: #029e9d;
+    transition: all ease-in-out 0.5s;
+}
+
+.tabs-navbar ul li.active a {
+    color: #fff;
+    background: #029e9d;
+    transition: all ease-in-out 0.5s;
+}
+
+.tabs-navbar1 {
+    border: 1px solid #f1f1f1;
+}
+
+.tabs-navbar1 ul {
+    display: inherit;
+    text-align: center;
+}
+
+.tabs-navbar1 ul li a {
+    padding: 10px 15px;
+    transition: all ease-in-out 0.5s;
+    border-radius: 10px;
+}
+
+.tabs-navbar1 ul li a:hover {
+    color: #fff;
+    background: #029e9d;
+    transition: all ease-in-out 0.5s;
+}
+
+.tabs-navbar1 ul li.active a {
+    color: #fff;
+    background: #029e9d;
+    transition: all ease-in-out 0.5s;
+}
+
+.navbar-sticky {
+    z-index: 9;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100%;
+    animation-name: slideInUp;
+    transition: all ease-in-out 0.5s;
+}
+
+.tabs-navbar1.navbar-sticky {
+    top: 99px;
+    transition: all ease-in-out 0.5s;
+    border-top: 1px solid #f1f1f1 !important;
+}
+
+.sticky1.tab-sticky {
+    top: 0px;
+    transition: all ease-in-out 0.5s;
+    animation-name: slideInUp;
+    box-shadow: 0 0 15px #cccccc57;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .tabs-navbar1.navbar-sticky {
+        top: 0;
+        position: relative !important;
+    }
+
+    .more-top .trend-image1 {
+        height: 300px;
+    }
+
+    .more-top .trend-content-main .trend-content {
+        padding: 20px 0 0;
+    }
+}
+
+@media (max-width: 567px) {
+    .trending .trend-item {
+        display: block !important;
+    }
+
+    .trending .trend-item .trend-content-main,
+    .trending .trend-item .trend-image {
+        width: 100% !important;
+    }
+
+    .trending .trend-item .trend-content {
+        padding: 20px 0;
+    }
+
+    .entry-meta {
+        display: block !important;
+    }
+}
+
+
+ul.sidebar-category1 li {
+    display: block;
+    line-height: 2.4;
+}
+
+.sidebar-category1 li {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    font-weight: 400;
+    color: #777;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ========================================= */
+/*          Listing CSS        */
+/* ======================================== */
+
+.list-results {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.list-results label {
+    margin: 0;
+}
+
+.list-results .nice-select {
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    width: 150px;
+    padding-left: 20px;
+    line-height: 1.5;
+    height: 44px;
+}
+
+.list-results .change-grid,
+.list-results .change-list {
+    display: inline-block;
+}
+
+.list-results .change-grid i,
+.list-results .change-list i {
+    line-height: 2.5;
+    text-align: center;
+    display: inline-block;
+    transition: all ease-in-out 0.5s;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+}
+
+.list-results .change-list.f-active i,
+.list-results .change-grid.f-active i {
+    background: #fdc703;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+    border-color: #fdc703;
+}
+
+
+
+@media (max-width: 567px) {
+    .list-results {
+        display: inherit !important;
+        text-align: center;
+    }
+
+    .list-results .click-menu {
+        justify-content: center !important;
+        margin-top: 1rem;
+    }
+
+    .list-results .click-menu .sortby {
+        display: inline-block !important;
+    }
+
+}
